@@ -1,0 +1,34 @@
+<div id="id01" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content" >
+		<!--<div class="imgcontainer">
+			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+		</div>-->
+		<div class="modal-header text-center">
+			<h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+			<button id="closeModalBtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+        </div>
+	<div class="modal-body mx-3">
+	  <div class="md-form mb-5">
+	    <i class="fas fa-user prefix grey-text"></i>
+		<input type="text" id="userName" name="uname" class="form-control validate" required>
+		<label for="uname" data-error="wrong" data-success="right"  >Your username</label>
+	  </div>
+	  <div class="md-form mb-4">          
+	  <i class="fas fa-lock prefix grey-text"></i>
+      <input type="password"  id="password"  class="form-control validate" name="psw" required>
+      <label for="psw" data-error="wrong" data-success="right">Your password</label>
+	 </div>
+	</div>
+	<div class="modal-footer d-flex justify-content-center">
+      <button onclick="checkUser()" type="button" class="btn btn-default" data-dismiss="modal" title="User name or password are incorrect!">Login</button>
+    </div>
+	
+	</div>
+	</div>
+  </div>
+
+<!--data-toggle="tooltip"-->

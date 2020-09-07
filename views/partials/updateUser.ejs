@@ -1,0 +1,89 @@
+<div id="idUpdateuserModal" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content" >
+		<div class="modal-header text-center">
+			<h4 class="modal-title w-100 font-weight-bold">Update user</h4>
+			<button id="closeModalBtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+        </div>
+	<div class="modal-body mx-3">
+	  <div class="md-form mb-5">
+	    <i class="fas fa-user prefix grey-text"></i>
+		<input type="text" id="userName2" name="uname" class="form-control validate" required>
+		<label for="uname" data-error="wrong" data-success="right"  >Username</label>
+	  </div>
+	   <div class="md-form mb-5">
+	    <i class="fas fa-id-card prefix grey-text"></i>
+		<input type="text" id="id2" name="id" class="form-control validate" required>
+		<label for="id" data-error="wrong" data-success="right"  >Id</label>
+	  </div>
+	  
+	<div class="md-form mb-5">
+	    <i class="fas fa-storer prefix grey-text" id="branch_icon2" style="display:none"></i>
+		<input type="text"  id="branch_id2" style="display:none" name="numOfBranch2" class="form-control validate" required>
+		<label for="numOfBranch2" id="branch_label2" style="display:none" data-error="wrong" data-success="right"  >Branch</label>
+	</div>	   
+	<div class="md-form mb-5">
+	    <i class="fas fa-lock prefix grey-text"></i>
+		<input type="password" id="password2" name="psw" class="form-control validate" required>
+		<label for="psw" data-error="wrong" data-success="right"  >Password</label>
+	</div>	
+ <div class="md-form mb-5">	
+		<i class="fas fa-users prefix grey-text"></i>
+		<select id="type2" class="browser-default custom-select" style="width:400px; margin-left:40px" onchange="onChangeInListAtUpdateUser()">
+					<option value="manager">manager 
+					<option value="customer">customer
+					<option value="supplier">supplier
+					<option value="employee">employee
+		</select>	
+	</div>	
+	</div>
+	<div class="modal-footer d-flex justify-content-center">
+      <button onclick="UpdateUserInList()"  data-toggle="tooltip" title="One of the fields is incorrect!" type="button" class="btn btn-default" data-dismiss="modal">Update</button>
+    </div>
+	
+	</div>
+	</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div id="idUpdateuserModal" class="modal">
+  <div class="modal-content animate" >
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('idUpdateuserModal').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div id="containerLogin" class="container">
+      <label for="uname" ><b>Name</b></label>
+      <input type="text" id="userName2" placeholder="Enter Username" name="uname" required>
+
+      <label for="id" ><b>Id</b></label>
+      <input type="text"  id="id2" placeholder="Enter Id" name="psw" required>
+	  <label for="type" ><b>Type</b></label>
+	  <select id="type2" onchange="onChangeInListAtUpdateUser()" placeholder="Type">
+					<option value="manager">manager  
+					<option value="customer">customer
+					<option value="supplier">supplier
+					<option value="employee">employee
+	  </select>
+	  <label id="branch_label2" style="display:none" for="numOfBranch2" ><b>Branch</b></label>
+	  <input type="text"  id="branch_id2" style="display:none" placeholder="Branch" name="numOfBranch2" required>
+	  <label for="psw" ><b>Password</b></label>
+      <input type="password"  id="password2" placeholder="Enter Password" name="psw" required>
+	  <button onclick="UpdateUserInList()"  data-toggle="tooltip" title="One of the fields is incorrect!">Update</button>
+    </div>
+  </div>
+</div>
+-->

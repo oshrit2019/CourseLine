@@ -1,0 +1,45 @@
+
+
+<div>
+	<%if(user.type==="employee" || user.type==="manager"){%>	
+
+	<div>
+		<button class="btn btn-default" onclick="uploadFlower()" data-toggle="modal" data-target="#uploadImageContainer"><i class="fa fa-plus" ></i>Add flower</button>
+	</div>
+	<%}%> 
+	<div class="outer-container home-page">
+    <div class="container-fluid">
+        <div class="row">
+		<% flowers.forEach(function(flower) { %>
+            <div class="col-12 col-md-6 col-lg-3 no-padding">
+                <div class="portfolio-content" style="margin-right:0px">
+                    <figure>
+                        <img src=<%= flower.src %>  style="height:180px;width:340px;" alt="">
+                    </figure>
+
+                    <div class="entry-content flex flex-column align-items-center justify-content-center gallery">
+                        <h3><div ><%= flower.name %></div></h3>
+
+                        <ul class="flex flex-wrap justify-content-center">
+                            <li><div ><%= flower.color %>,</div></li>
+                            <li><div > <%= flower.price %></div></li>
+                        </ul>
+                    </div><!-- .entry-content -->
+                </div><!-- .portfolio-content -->
+            </div><!-- .col -->
+			 <% }); %>
+		</div>
+	</div>
+	</div>
+	
+<!--
+	<div>
+		<% flowers.forEach(function(flower) { %>
+		<div class="gallery" style="font-weight: bold;font-family:'Times New Roman', Times, serif">
+			<img src=<%= flower.src %> alt="Cinque Terre" style="height:150px;width:178px;">
+			<div class="desc">NAME : <%= flower.name %> <br> COLOR : <%= flower.color %> <br> PRICE : <%= flower.price %></div>
+		</div>
+	 <% }); %>
+	</div>
+-->
+</div>

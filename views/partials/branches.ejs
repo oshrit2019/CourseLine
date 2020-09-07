@@ -1,0 +1,28 @@
+<div class="card-group">
+	<% branches.forEach(function(branch) { %>
+	<div class="card" style="margin:10px">
+		<div class="card-body">
+			<h5 class="card-title"> <%= branch.name %></h5>
+			<p class="card-text"> <%= branch.address %> </p>
+			<p class="card-text"><small class="text-muted"><%= branch.phoneNumber %></small></p>
+		</div>
+	</div>
+	<% }); %>
+</div>
+
+
+<!--
+
+
+<div class="container">
+  <div class="panel-group" style="font-family:'Times New Roman', Times, serif">
+  <% branches.forEach(function(branch) { %>
+    <div class="panel panel-default">
+      <div class="panel-heading" style="font-size:30px;font-family:'Times New Roman', Times, serif"> <%= branch.name %></div>
+      <div class="panel-body">PHONE NUMBER : <%= branch.phoneNumber %> <br> ADDRESS : <%= branch.address %>  </div>
+    </div>
+	 <% }); %>
+  </div>
+</div>
+
+-->
