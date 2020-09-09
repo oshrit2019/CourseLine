@@ -5,10 +5,12 @@ const mongo = require("mongoose");
 //let db = mongo.createConnection('mongodb://localhost:27017/lab-mongo-5778', { useMongoClient: true });
 //db.then(() => debug("Connected to DB"));
 //db.catch(err => debug("Error connecting to DB: " + err));
+
+let URI="mongodb+srv://oshritVidal:Oshrit2020@cluster0.oqvja.mongodb.net/CourseLine?retryWrites=true&w=majority"
 let db = mongo.createConnection();
 (async () => {
     try {
-        await db.openUri('mongodb://localhost/CourseLine');
+        await db.openUri(URI);
     } catch (err) {
         debug("Error connecting to DB: " + err);
     }

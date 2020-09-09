@@ -43,14 +43,14 @@ export default function ContantUsForm() {
           <p>Bracha Assulin and Oshrit Vidal, developers and owners of an innovative startup for purchasing courses online.
           </p><br />
           <CallSplitIcon style={{ fontSize: 40 }} />
-          <p style={{ fontFamily: "Cursive", fontWeight: 'bold', textAlign: 'center', fontSize: 24 }}>How did we get there?
+          <p style={{ fontFamily: "Cursive", fontWeight: 'bold', textAlign: 'center', fontSize: 24 }}>How did we start?
           </p>
-          <p> Following the corona crisis, we saw that there is a lot of time we are at home and to take advantage of this time we thought of a way to acquire knowledge easily and without having to leave the house.
+          <p> Following the corona crisis, we saw that there is a lot of time we are at home, and to take advantage of this time we thought of a way to acquire knowledge easily and without having to leave the house.
          </p> <br />
           <HelpOutlineIcon style={{ fontSize: 40 }} />
           <p style={{ fontFamily: "Cursive", fontWeight: 'bold', textAlign: 'center', fontSize: 24 }}>How It Works?
         </p>
-          <p> Register for the site, choose courses you are impressed with, pay, get course permissions and get started!
+          <p> Register for the site, choose courses you are impressed with, pay, get course permissions, and get started!
         </p>
           <br />
           <ThumbUpIcon style={{ fontSize: 40 }} />
