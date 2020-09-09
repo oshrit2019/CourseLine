@@ -16,3 +16,6 @@
 5. npm install material-table @material-ui/core --save
 6. npm install styled-components --save
 7. npm install react-payment-inputs --save
+
+![Alt text for your video](https://github.com/oshrit2019/CourseLine/blob/master/20200909_181116.gif)
+
