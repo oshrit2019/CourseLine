@@ -7,7 +7,7 @@
 4. npm start
 (you need to install packeages) 
 
-* packages that in use:
+* packages to install:
 
 1. npm install --save google-maps-react
 2. npm install --save react-awesome-slider
